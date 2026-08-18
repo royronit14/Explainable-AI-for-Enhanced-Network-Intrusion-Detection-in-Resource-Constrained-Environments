@@ -1,0 +1,31 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.csv
+*.arff
+*.txt
+*.md
+
+
+# Outputs (regenerable)
+xai_nids_results/*.png
+xai_nids_results/*.csv
+!xai_nids_results/.gitkeep
