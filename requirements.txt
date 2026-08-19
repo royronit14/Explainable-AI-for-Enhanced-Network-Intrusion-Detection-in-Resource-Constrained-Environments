@@ -9,3 +9,9 @@ lime
 eli5
 jupyter
 ipykernel
+
+# Phase 3 — HTTP backend
+fastapi
+uvicorn[standard]
+python-multipart
+httpx

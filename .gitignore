@@ -1,31 +1,85 @@
-# Virtual environment
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+
 .venv/
 venv/
 env/
 
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# =========================
+# Datasets / Large Local Data
+# =========================
+UNSW-NB15/
+nsl-kdd/
+*.csv
+*.arff
+
+# =========================
 # Jupyter
+# =========================
 .ipynb_checkpoints/
-*.ipynb_checkpoints/
 
-# OS
-.DS_Store
-Thumbs.db
+# =========================
+# Node / Next.js
+# =========================
+node_modules/
+.next/
+out/
+.turbo/
+.vercel/
 
-# Editor
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# IDE
+# =========================
 .vscode/
 .idea/
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.csv
-*.arff
-*.txt
-*.md
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
 
+# =========================
+# Logs
+# =========================
+*.log
 
-# Outputs (regenerable)
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+
+# =========================
+# Generated Local Outputs
+# =========================
+results/*.csv
+results/*.json
+
 xai_nids_results/*.png
 xai_nids_results/*.csv
-!xai_nids_results/.gitkeep
+
+# =========================
+# Claude / Local AI Tooling
+# =========================
+.claude/

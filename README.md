@@ -56,3 +56,34 @@ The notebook imports and uses:
 
 - The notebooks were not executed in this workspace, so the README is based on the visible notebook code and file layout.
 - The project appears notebook-driven rather than packaged as a Python module.
+
+## Backend (FastAPI)
+
+The HTTP API lives in `app/`. It loads the trained XGBoost models from `models/`
+and exposes single + batch predictions with local SHAP explanations.
+
+```bash
+pip install -r requirements.txt
+uvicorn app.main:app --reload        # http://127.0.0.1:8000
+pytest tests/                         # 17 tests cover inference + API
+```
+
+Endpoints: `GET /`, `GET /health`, `GET /model-info`, `POST /predict`,
+`POST /predict/batch`. CORS is configured via the `CORS_ORIGINS` env var
+(comma-separated origins, default `http://localhost:3000`).
+
+## Frontend (Next.js)
+
+The Next.js 14 app lives in `frontend/`.
+
+```bash
+cd frontend
+npm install
+cp .env.local.example .env.local      # contains NEXT_PUBLIC_API_URL
+npm run dev                           # http://localhost:3000
+npm run build                         # production build
+```
+
+The frontend reads the backend URL from `NEXT_PUBLIC_API_URL` only — no
+hardcoded production URLs.
+
