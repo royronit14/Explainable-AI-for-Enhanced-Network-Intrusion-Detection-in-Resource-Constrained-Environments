@@ -1,0 +1,44 @@
+{
+  "model_type": "XGBoost",
+  "random_state": 42,
+  "top_k": 10,
+  "n_features_full": 39,
+  "n_features_light": 10,
+  "full_metrics": {
+    "accuracy": 97.64377239327139,
+    "precision": 97.6524566742928,
+    "recall": 97.64377239327139,
+    "f1": 97.64504310757798,
+    "training_time_s": 1.2452118396759033
+  },
+  "light_metrics": {
+    "accuracy": 97.29762555413858,
+    "precision": 97.30749213892335,
+    "recall": 97.29762555413858,
+    "f1": 97.29915718387349,
+    "training_time_s": 0.6329348087310791
+  },
+  "comparison_metrics": {
+    "Decision Tree": {
+      "accuracy": 96.47173134147083,
+      "precision": 96.47177586302783,
+      "recall": 96.47173134147083,
+      "f1": 96.4717532430749,
+      "training_time_s": 2.8940765857696533
+    },
+    "MLP Classifier": {
+      "accuracy": 95.91911094917107,
+      "precision": 95.9181718792884,
+      "recall": 95.91911094917107,
+      "f1": 95.91812531707279,
+      "training_time_s": 62.95804309844971
+    },
+    "XGBoost": {
+      "accuracy": 97.64377239327139,
+      "precision": 97.6524566742928,
+      "recall": 97.64377239327139,
+      "f1": 97.64504310757798,
+      "training_time_s": 1.484896183013916
+    }
+  }
+}

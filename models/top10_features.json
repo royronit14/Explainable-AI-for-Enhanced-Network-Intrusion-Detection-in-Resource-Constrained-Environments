@@ -1,0 +1,15 @@
+{
+  "top_features": [
+    "num__sttl",
+    "num__ct_dst_src_ltm",
+    "num__ct_dst_sport_ltm",
+    "num__sbytes",
+    "num__smean",
+    "num__ct_srv_dst",
+    "num__ct_srv_src",
+    "num__ct_dst_ltm",
+    "num__dbytes",
+    "num__dmean"
+  ],
+  "k": 10
+}
