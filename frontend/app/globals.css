@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #0a0f17;
+  color: #e2e8f0;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(15, 23, 36, 0.85), rgba(10, 15, 23, 0.7));
+  border: 1px solid #1e2a3d;
+  backdrop-filter: blur(6px);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #22d3ee, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.flow-arrow::after {
+  content: "↓";
+  color: #22d3ee;
+  margin: 0 0.5rem;
+}
+
+.grid-bg {
+  background-image: radial-gradient(rgba(34, 211, 238, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+  background-color: #0a0f17;
+  border: 1px solid #1e2a3d;
+  color: #e2e8f0;
+  border-radius: 6px;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 1px #22d3ee44;
+}
+
+label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
