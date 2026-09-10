@@ -64,7 +64,7 @@ and exposes single + batch predictions with local SHAP explanations.
 
 ```bash
 pip install -r requirements.txt
-uvicorn app.main:app --reload        # http://127.0.0.1:8000
+uvicorn app.main:app --reload        # http://127.0.0.1:8001
 pytest tests/                         # 17 tests cover inference + API
 ```
 
