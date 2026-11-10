@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-export const metadata: Metadata = {
-  title: "XAI Network Intrusion Detection",
-  description:
-    "Detect suspicious network traffic, understand why the model flagged it, and compare full and lightweight detection models.",
+export const metadata = {
+  title: "NetGuard AI | Explainable Network Intrusion Detection",
+  description: "AI-powered network intrusion detection with XGBoost and SHAP explainability.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
